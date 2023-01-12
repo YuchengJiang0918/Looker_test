@@ -68,3 +68,11 @@ explore: sales_territory_data {}
 explore: sql_runner_query_test {}
 
 explore: sql_runner_query_test2 {}
+
+explore: sql_runner_query_test3 {
+  join: sql_runner_query_test2 {
+    type: full_outer
+    sql_on: ${sql_runner_query_test3.country} = ${sql_runner_query_test2.reseller_data_countryregion} ;;
+    relationship: one_to_one
+  }
+}
