@@ -66,3 +66,5 @@ explore: sales_order_data {}
 explore: sales_territory_data {}
 
 explore: sql_runner_query_test {}
+
+explore: sql_runner_query_test2 {}
